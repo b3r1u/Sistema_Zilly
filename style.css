@@ -549,3 +549,18 @@ header p {
 #sensorList {
   margin-top: 2rem;
 }
+
+.alert-popup {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #ffd700; 
+  color: #000;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
