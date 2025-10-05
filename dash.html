@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sensores</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sensores</h1>
+      <button class="settings-btn">⚙️</button>
+    </header>
+
+    <section class="status-container">
+      <h2>Status dos Equipamentos</h2>
+      <div class="status-grid">
+        <div class="status-item normal">
+          <span>✅</span>
+          <p>Normal</p>
+          <strong>3</strong>
+        </div>
+        <div class="status-item alerta">
+          <span>⚠️</span>
+          <p>Alerta</p>
+          <strong>1</strong>
+        </div>
+        <div class="status-item critico">
+          <span>🚨</span>
+          <p>Crítico</p>
+          <strong>1</strong>
+        </div>
+        <div class="status-item offline">
+          <span>🔌</span>
+          <p>Offline</p>
+          <strong>1</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="filtros">
+      <button class="ativo">Todos</button>
+      <button>Piscina</button>
+      <button>Garagem</button>
+    </section>
+
+    <div class="search">
+      <input type="text" placeholder="Buscar sensores..." id="searchInput" />
+    </div>
+
+    <main id="sensorList"></main>
+
+    <button class="add-btn" onclick="window.location.href='adicionar.html'">
+      ＋
+    </button>
+
+    <nav class="bottom-nav">
+      <button class="active">
+        🏠
+        <p>Início</p>
+      </button>
+      <button>
+        🔔
+        <p>Alertas</p>
+      </button>
+      <button>
+        📊
+        <p>Relatórios</p>
+      </button>
+    </nav>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sensor Detalhes</title>
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <button class="back-btn" title="Voltar">‹</button>
+        <div>
+          <h1>Sensor Nº 3</h1>
+          <p>Pilar 3 - Garagem Sul</p>
+        </div>
+      </div>
+      <button class="settings-btn">✏️</button>
+    </header>
+
+    <div class="status-container">
+      <div class="status-grid">
+        <div class="status-item">
+          <p>Velocidade</p>
+          <strong id="velAtual">2.3 mm/s</strong>
+          <small>Range: 0 - 10 mm/s</small>
+        </div>
+        <div class="status-item normal">
+          <p>Sinal</p>
+          <strong>85%</strong>
+        </div>
+        <div class="status-item">
+          <p>Atualizado</p>
+          <strong>há 1 min</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="filtros">
+      <button class="ativo">Gráfico</button>
+      <button>Eventos</button>
+      <button>Notas</button>
+    </div>
+
+    <div class="chart-box">
+      <h2>Índice de Vibração</h2>
+      <div class="chart-container">
+        <canvas id="freqChart"></canvas>
+      </div>
+      <div class="chart-container" style="margin-top: 1rem">
+        <canvas id="velChart"></canvas>
+      </div>
+    </div>
+
+    <script src="mqtt.js"></script>
+  </body>
+</html>

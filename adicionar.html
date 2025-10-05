@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adicionar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="add-main">
+      <!-- Botões flutuantes -->
+      <div class="floating-buttons">
+          <button class="floating-btn add-local" title="Adicionar Local">
+              🏠
+            </button>
+            <button class="floating-btn add-sensor" title="Adicionar Sensor">
+                📷
+            </button>
+            <button class="floating-btn close-btn" title="Fechar">×</button>
+      </div>
+    </main>
+  </body>
+  <script>
+    const closeBtn = document.querySelector(".close-btn");
+    closeBtn.addEventListener("click", () => {
+      window.history.back(); 
+    });
+  </script>
+</html>
